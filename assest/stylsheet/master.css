@@ -1,0 +1,505 @@
+/* ==========menu============== */
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #e0e0e0;
+    display: flex;
+    position: relative;
+    color: #303030;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu>ul:nth-of-type(1){
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 33.33%; 
+
+}
+.menu>ul:nth-of-type(2){
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 33.33%; 
+}
+.menu>ul:nth-of-type(3){
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 33.33%; 
+}
+
+.menu>ul>li{
+    /* border-radius: 1px solid rgba(1, 1, 129, 0.089); */
+    transition: 1s;
+}
+
+.menu>ul>li>a{
+    align-items: center;
+    color: #303030;
+}
+
+.menu>ul:nth-of-type(3)>li>a>img{
+    width: 24px;
+    transition: .4s;
+}
+/* ========= menu:hover============== */
+
+.menu>ul>li:hover{
+    border-bottom: 1px solid rgb(1, 1, 129);
+}
+
+.menu>ul>li>a:hover{
+    color: rgb(1, 1, 129);
+}
+
+.menu>ul:nth-of-type(3)>li>a>img:hover{
+    width: 28px;
+}
+
+/* ==========Mega menu============== */
+
+.megamenu{
+    width: 100%;
+    width: inherit;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;left: 0;
+    transition: 1s;
+    background-color: #f2f2f2;
+}   
+
+.menu>ul>li:hover>.megamenu{
+    height: calc(100vh - 60px);
+}
+
+.megamenu>li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 5%;
+}
+
+#megamenuright{
+    width: 70%;
+ /* background-color: yellow; */  
+
+}
+
+#megamenuright>div{
+    height: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+#megamenuright>div>ul{
+    width: 50%;
+    padding: 5%;
+    /* background-color: #9b1616; */
+}
+
+#megamenuright>div :is(ul:nth-of-type(1), ul:nth-of-type(2))>hr{
+    border-bottom: 1px solid #bbbaba;
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
+
+#megamenuright>div :is(ul:nth-of-type(1), ul:nth-of-type(2))>li>a{
+    color: #1500d1;
+    line-height: 32px;
+}
+
+#megamenuright>div>ul>li>a:hover{
+    color: rgb(33, 0, 87);
+}
+
+#megamenuright>p{
+    margin: 0 5%;
+}
+
+#megamenuright>button{
+    margin: 2% 5%;
+    width: 100px;
+    height: 42px;
+    background-color: #1500d1;
+    border-radius: 5%;
+}
+
+#megamenuright>button>a{
+    color: #f2f2f2;
+}
+
+.menu>ul>li>ul>li>div:nth-of-type(2){
+    width: 30%;
+}
+
+.menu>ul>li>ul>li>div:nth-of-type(2){
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.menu>ul>li>ul>li>div:nth-of-type(2)>figure{
+    width: 100%;
+}
+
+.menu>ul>li>ul>li>div:nth-of-type(2)>figure>img{
+    width: 100%;
+}
+
+.menu>ul>li>ul>li>div:nth-of-type(2)>h2{
+    margin: 16px 0;
+}
+
+
+/* ========hero-sec========= */
+#hero-sec{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid yellow; */
+    display: flex;
+}
+
+/* ========hero-sec Right========= */
+#hero-sec>figure{
+    width: 75%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+#hero-sec>figure::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.178);
+    position: absolute;
+    top: 0;left: 0;
+}
+
+#hero-sec>figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titer{
+    width: 50%;
+    min-height: 100px;
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    color: #f2f2f2;
+}
+
+.titer>a{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    margin: 32px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/* ========hero-sec Left========= */
+#hero-sec>div:nth-of-type(1){
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid chocolate; */
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#hero-sec>div:nth-of-type(1)>ul>li{
+    color: #f2f2f2;
+    text-align: center ;
+    margin-bottom: 5%;
+
+}
+
+
+#hero-sec>div:nth-of-type(1)>ul>li>h3{
+    padding: 0 20%;   
+}
+
+.line{
+    width: 100%;
+    transform: rotate(90);
+    justify-content: center;
+    display: flex;
+
+}
+
+.line::after{
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.322);
+    justify-content: center;
+}
+
+#hero-sec>div:nth-of-type(1)>ul>li>a{
+    font-weight: bold;
+    transition: 1s;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#hero-sec>div:nth-of-type(1)>ul>li>a:hover{
+    border-bottom: 1px solid  rgb(36, 36, 36);
+    width: 50%;
+}
+
+
+/* ============== sec 2  ============== */
+section:nth-of-type(2){
+    padding: 5%;
+    width: 100%;
+    height: 40%;
+    background-color: #f7f5f0;
+    text-align: center;
+    color: #303030;
+}
+
+section:nth-of-type(2)>p{
+    /* margin: 32px; */
+    padding: 2% 30%;
+    color: #757575;
+    line-height: 32px;
+}
+
+section:nth-of-type(2)>a{
+    color: #0f0f0f;
+    font-weight: bold;
+    border-bottom: 1px solid #0f0f0f;
+
+}
+
+/* ============== sec 3  ============== */
+section:nth-of-type(3){
+    width: 100%;
+    height: 80vh;
+    color: #303030;
+    padding: 3% 0;
+}   
+
+section:nth-of-type(3)>div:nth-of-type(1){
+    width: 100%;
+    height: 80%;
+    margin-left: 30%;
+}
+
+.slider{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: stretch;
+    color: #f2f2f2;
+    margin: 5% 0;
+}
+
+.slider>div{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #f2f2f2;
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+
+.slider>div:hover{
+    flex-grow: 10;
+}
+
+.slider>div:hover>h3{
+    transform: rotate(0deg);
+    right: 5px;
+    bottom: 5%;
+    transition: .4s;
+  }
+
+  .slider>div>h3{
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 20%;
+    right: -30%;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.slider>div:nth-child(1){
+    background-image: url(../img/attractive-stylish-blonde-smiling-woman-checkered-jacket-against-wall-street.jpg);
+}
+
+.slider>div:nth-of-type(2){
+    background-image: url(../img/cute-woman-autumn-style-trendy-outfit-walking-street.jpg);
+}
+
+.slider>div:nth-of-type(3){
+    background-image: url(../img/portrait-attractive-stylish-blonde-woman-beige-coat-walking-street-against-vintage-wall.jpg);
+}
+
+.slider>div:nth-of-type(4){
+    background-image: url(../img/winer-fashion-look-stylish-brunette-model-brown-coat-ankle-boot-black-leather-posing.jpg);
+}
+
+.slider>div:nth-of-type(5){
+    background-image: url(../img/fashion-portrait-young-elegant-woman.jpg);
+}
+.slider>div:nth-of-type(6){
+    background-image: url(../img/young-stylish-woman-walking-street-fashionable-outfit-holding-purse-wearing-black-leather-jacket-white-lace-dress-spring-autumn-style.jpg);
+}
+.slider>div:nth-of-type(7){
+    background-image: url(../img/stylish-european-brunette-woman-red-coat-black-hat-posing-white-wall.jpg);
+}
+
+/* ============== sec 4  ============== */
+section:nth-of-type(4){
+    background-color: #f7f5f0;
+    width: 100%;
+    height: 70vh;
+    padding: .75% 15%;
+}
+
+section:nth-of-type(4)>div{
+    /* margin-top: 2%; */
+    display: flex;
+    margin: 5% 10%;
+    /* border: 1px solid red; */
+}
+
+section:nth-of-type(4)>div>h2{
+    width: 30%;
+    height: 30%;
+    /* border: 1px solid red; */
+}
+
+section:nth-of-type(4)>div>p{
+    width: 70%;
+    height: 30%;
+    /* border: 1px solid red; */
+    line-height: 32px;
+    color: #757575;
+}
+
+section:nth-of-type(4)>hr{
+    height: 0.5px;
+    color: #75757570;
+    width: 110vh;
+    margin: 0 10%;
+}
+
+/* ============== sec 5  ============== */
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: auto ;
+    /* background-color: aqua; */
+    display: grid;
+    padding: 5%;   
+}
+
+.container>*{
+    border: 3px solid white;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+    transition: .6s;
+    background-size: 90%;
+}
+
+.container>div::before,
+.container>div::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container>div::before{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.container>div:hover{
+    background-size: 100%;
+}
+
+
+.container>div:nth-of-type(1){
+    grid-area: 1/1/span 2/span 2;
+    background-image: url(../img/collection-mojave-5-min-min.webp);
+
+}
+
+.container>div:nth-of-type(2){
+    grid-area: 1/3/span 2/span 1;
+    background-image: url(../img/woman-with-red-handbag-walking-while-speaking-phone-near-business-building.jpg);
+
+}
+
+.container>div:nth-of-type(3){
+    grid-area: 3/1/span 2/span 2;
+    background-image: url(../img/Image-4.jpg);
+}
+
+.container>div:nth-of-type(4){
+    grid-area: 3/2/span 2/span 2;
+    background-image: url(../img/banner_-_sustainability_1.webp);
+}
+
+/* ============== sec 6  ============== */
+#sec6{
+    width: 100%;
+    height: 50vh;
+    background-color: #f7f5f0;
+    padding: 5% 35%;
+    text-align: center;
+}
+
+.mail>p{
+    color: #757575;
+}
+
+input{
+    margin-top: 16px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+/* ============== footer ============== */
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+    display: flex;
+    padding: 5% 10%;
+    justify-content: center;
+}
+
+footer>ul{
+    width: 20%;
+    margin: 20px;
+    /* border: 1px solid red; */ 
+}
+
+footer>ul>li{
+    margin: 16px 0;
+}
+
+footer>a:hover{
+    color: #1500d1;
+}
