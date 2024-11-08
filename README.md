@@ -1,8 +1,10 @@
 # Fashion Website!
 
-- [Demo Project](https://humayb.github.io/Animation-Whale-And-The-Moon/)
+- [Demo Project](https://humayb.github.io/Fashion-Website/)
 
-- UI Designer and Developer: Homa BahramParvar
+- **Just Parctice** -  Developer: Homa BahramParvar
 - Technologies Used - Html , CSS
+
+  ![Fashion ](https://github.com/Humayb/Fashion-Website/blob/main/Fashian-Site.jpg)
 
 
